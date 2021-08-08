@@ -1,0 +1,16 @@
+Popis:
+	D6r relay sluzi na preposielanie DHCPV6 sprav od klienta ku vzdialenemu serveru.Zachytava packety bud pomocou libpcap, alebo za pouzitia socketov.
+	Nedokaze preposielat relay-forward spravy od nejakeho ineho relay ku serveru. 
+	Meno interface musi mat dlzku maximalne 20 znakov, v pripade zmeny interface restartujte relay.
+	Musi byt spustene pod sudo.
+
+Parametre:
+	-d		Zapne vypisovanie pridelenych ipv6 adries ku konkretnim klientom a taktiez ich mac adries
+	-l 		Zapne vypisovanie aj do syslogu
+	-s<adresa> 	Povinny parameter,ipv6 adresa dhcpv6 servera
+	-i <interface> 	Paramater urci interface na ktorom chcete pocuvat spravy od klienta, v pripade ze sa parameter nepouzije sa pocuva na vsetkych ktory maju ipv6 adresu (aj loopback)
+
+Pouzitie: 
+	$ sudo ./d6r -i eth0 -s 2001:67c:1220:80c::93e5:dd2 -d
+
+			  
