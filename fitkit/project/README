@@ -1,0 +1,14 @@
+#
+Zadanie: 
+
+1. Nalezněte, popř. navrhněte vlastní, dva až tři mechanismy vhodné pro testování
+(zvolených částí) mikrokontrolérů, např. hodin, pamětí RAM/flash, registrů,
+zásobníku, I/O, ADC/DAC, toku programu) programovými prostředky.
+
+2. Zvolené mechanismy implementujte, ideálně po předchozí diskuzi s vedoucím
+ohledně ne/triviálnosti zvoleného způsobu řešení.
+
+Riesenie: 
+    1.Test RAM 
+    2.Test LPTMR časovača
+#
